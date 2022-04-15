@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.allBookWrapper{
+    display: flex;
+}
+.logo{
+    background: white;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 10%;
+    cursor: pointer;
+    font-weight: 100;
+}
+.logoSpan{
+    color: #ed2323;
+    font-weight: bold;
+}
+.buttonWrapper{
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+}
+.header{
+    background: whitesmoke;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(211, 209, 209);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+    button, .addBookBtn{
+    border: 1px solid rgb(211, 209, 209);
+    padding: .2rem .4rem;
+    border-radius: 7px;
+    font-weight: bold;
+}
+button:hover, .addBookBtn:hover{
+    background: #ed2323;
+    color: whitesmoke;
+}
+
+.header button i{
+    font-size: 2vw;
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.bookCard, .audioBookCard{
+    display: flex;
+    margin: 1%; 
+    width: 40vw;
+    height: 200px;
+    padding: 1.5%;
+    border-bottom: 1px solid rgb(211, 209, 209);
+    position: relative;
+}
+.bookCard img, .audioBookCard img{
+    width: 110px;
+    margin-right: 2.5%;
+    align-self: center;
+}
+.bookCard h1, .audioBookInfo h1{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.bookInfo, .audioBookInfo{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+ .bookInfo h2,.bookInfo h3,.bookInfo h4,.bookInfo p, .audioBookInfo h2, .audioBookInfo h3, .audioBookInfo h3, .audioBookInfo h4, .audioBookInfo p{
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+    line-height: 20px;
+}
+
+.audioBookCard img{
+    width: 110px;
+    height: 110px;
+}
+.loginWrapper,.registerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.ProfileCardWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profileInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 1px solid rgb(211, 209, 209);
+    margin: 2%;    
+    border-radius: 10px;
+}
+
+._INFOSTYLE{
+    padding: .7rem;
+}
+._INFOSTYLE h2, ._INFOSTYLE h3, ._INFOSTYLE h4{
+font-size: 1.5vw;
+font-weight: 100;
+}
+.myBooksWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65vw;
+    align-items: center;
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.myBooks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.personalBookCard,.personalAudioBookCard{
+    margin: 2%;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.personalAudioBookInfo button, .personalAudioBookInfo button{
+    align-self: center;
+}
+.personalAudioBookCard img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+.personalBookCard img{
+    height: 20vw;
+}
+.PersonalBookInfo, .personalAudioBookInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.PersonalBookInfo h1, .personalAudioBookInfo h1{
+font-size: 2vw;
+line-height: normal;
+}
+.PersonalBookInfo h2 ,.PersonalBookInfo h3, .PersonalBookInfo h4,.personalAudioBookInfo h2, .personalAudioBookInfo h3, .personalAudioBookInfo h4{
+    font-size: 1vw;
+    line-height: normal;
+}
+.addBookWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+input#_IMAGE{
+   width: 20vw;
+}
+.booksCategory{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 20vh;
+    justify-content: space-between;
+    position: fixed;
+    top: 25vh;
+    float: right;
+    right: 0px;
+    margin-right: 5%;
+}
