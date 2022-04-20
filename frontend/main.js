@@ -26,7 +26,7 @@ const audioBookCardComponent = (title,length,releaseDate,typeOfGenre,url,rating,
             <h2>Författare: ${length}</h2>
             <p>Genre: ${typeOfGenre}</p>
             <h3>Betyg: ${rating}/10</h3>
-            <h4>${releaseDate} Sidor</h4>
+            <h4>Publicerad: ${releaseDate}</h4>
             <p>Utlånas av ${username}.<br> Email: ${email}</p>
 
             <p></p>
